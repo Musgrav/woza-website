@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -56,29 +57,29 @@ export const Footer = () => {
             <h3 className="text-white font-bold text-lg mb-4">Support</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="#safety" className="hover:text-white transition-colors hover:underline">
+                <Link to="/safety" className="hover:text-white transition-colors hover:underline">
                   Safety Center
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#help" className="hover:text-white transition-colors hover:underline">
+                <Link to="/help" className="hover:text-white transition-colors hover:underline">
                   Help Center
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#terms" className="hover:text-white transition-colors hover:underline">
+                <Link to="/terms" className="hover:text-white transition-colors hover:underline">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#privacy" className="hover:text-white transition-colors hover:underline">
+                <Link to="/privacy" className="hover:text-white transition-colors hover:underline">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="hover:text-white transition-colors hover:underline">
+                <Link to="/contact" className="hover:text-white transition-colors hover:underline">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -89,8 +90,8 @@ export const Footer = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
-                <a href="mailto:support@woza.co.za" className="hover:text-white transition-colors">
-                  support@woza.co.za
+                <a href="mailto:help@woza.co.za" className="hover:text-white transition-colors">
+                  help@woza.co.za
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -127,7 +128,9 @@ export const Footer = () => {
                   <Twitter className="h-5 w-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://instagram.com/usewoza"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-gray-800 hover:bg-orange-600 flex items-center justify-center transition-colors"
                   aria-label="Instagram"
                 >
@@ -152,12 +155,12 @@ export const Footer = () => {
               © 2025 Woza. All rights reserved.
             </p>
             <div className="flex gap-6 text-gray-400">
-              <a href="#privacy" className="hover:text-white transition-colors">
+              <Link to="/privacy" className="hover:text-white transition-colors">
                 Privacy
-              </a>
-              <a href="#terms" className="hover:text-white transition-colors">
+              </Link>
+              <Link to="/terms" className="hover:text-white transition-colors">
                 Terms
-              </a>
+              </Link>
               <a href="#cookies" className="hover:text-white transition-colors">
                 Cookies
               </a>

@@ -79,8 +79,8 @@ export const Hero = () => {
             </div>
           </Card>
 
-          {/* Middle Right Card */}
-          <Card className="absolute top-[28rem] right-16 sm:right-16 lg:right-48 w-64 p-4 shadow-xl border-2 bg-green-50 border-green-200 animate-float hidden md:block z-10">
+          {/* Middle Right Card - Moved slightly up */}
+          <Card className="absolute top-[25rem] right-16 sm:right-16 lg:right-48 w-64 p-4 shadow-xl border-2 bg-green-50 border-green-200 animate-float hidden md:block z-10">
             <div className="flex items-start gap-3">
               <Check className="h-5 w-5 text-white-600 flex-shrink-0 mt-1" />
               <div>
