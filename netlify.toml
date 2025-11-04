@@ -1,9 +1,12 @@
+# Serve .well-known files directly, no redirect
 [[redirects]]
   from = "/.well-known/*"
   to = "/.well-known/:splat"
   status = 200
   force = true
+  conditions = {Host = ["usewoza.com", "www.usewoza.com"]}
 
+# All other routes go to index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
