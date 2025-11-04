@@ -1,0 +1,6 @@
+# Apple Pay domain verification - serve directly, don't redirect
+/.well-known/apple-developer-merchantid-domain-association /.well-known/apple-developer-merchantid-domain-association 200
+
+# All other routes go to index.html for React Router
+/*    /index.html   200
+
