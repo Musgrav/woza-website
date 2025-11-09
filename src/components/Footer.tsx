@@ -3,27 +3,27 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer id="about" className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
-        <div className="py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="py-12 sm:py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           {/* Company Info */}
-          <div className="space-y-4">
-            <div className="text-3xl font-bold text-white">Woza</div>
+          <div className="space-y-3 sm:space-y-4">
+            <div className="text-2xl sm:text-3xl font-bold text-white">Woza</div>
             <p className="text-sm leading-relaxed">
               Making long-distance travel across South Africa simple, safe, and affordable. 
               Join thousands of verified travelers today.
             </p>
             <div className="flex items-center gap-2 text-sm">
-              <Shield className="h-4 w-4 text-orange-400" />
+              <Shield className="h-4 w-4 text-orange-400 flex-shrink-0" />
               <span className="text-orange-400 font-semibold">100% Verified Users</span>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-3 text-sm">
+            <h3 className="text-white font-bold text-base sm:text-lg mb-3 sm:mb-4">Quick Links</h3>
+            <ul className="space-y-2 sm:space-y-3 text-sm">
               <li>
                 <a href="#how-it-works" className="hover:text-white transition-colors hover:underline">
                   How It Works
@@ -54,8 +54,8 @@ export const Footer = () => {
 
           {/* Support */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-4">Support</h3>
-            <ul className="space-y-3 text-sm">
+            <h3 className="text-white font-bold text-base sm:text-lg mb-3 sm:mb-4">Support</h3>
+            <ul className="space-y-2 sm:space-y-3 text-sm">
               <li>
                 <Link to="/safety" className="hover:text-white transition-colors hover:underline">
                   Safety Center
@@ -86,11 +86,11 @@ export const Footer = () => {
 
           {/* Contact & Social */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-4">Get in Touch</h3>
-            <ul className="space-y-4 text-sm">
+            <h3 className="text-white font-bold text-base sm:text-lg mb-3 sm:mb-4">Get in Touch</h3>
+            <ul className="space-y-3 sm:space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-orange-400 flex-shrink-0 mt-0.5" />
-                <a href="mailto:help@woza.co.za" className="hover:text-white transition-colors">
+                <a href="mailto:help@woza.co.za" className="hover:text-white transition-colors break-all">
                   help@woza.co.za
                 </a>
               </li>
@@ -110,9 +110,9 @@ export const Footer = () => {
             </ul>
 
             {/* Social Links */}
-            <div className="mt-6">
+            <div className="mt-5 sm:mt-6">
               <div className="text-sm font-semibold text-white mb-3">Follow Us</div>
-              <div className="flex gap-3">
+              <div className="flex gap-3 flex-wrap">
                 <a 
                   href="#" 
                   className="w-10 h-10 rounded-full bg-gray-800 hover:bg-orange-600 flex items-center justify-center transition-colors"
@@ -149,12 +149,12 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <p className="text-gray-400">
+        <div className="border-t border-gray-800 py-6 sm:py-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+            <p className="text-gray-400 text-center sm:text-left">
               © 2025 Woza. All rights reserved.
             </p>
-            <div className="flex gap-6 text-gray-400">
+            <div className="flex gap-4 sm:gap-6 text-gray-400 flex-wrap justify-center">
               <Link to="/privacy" className="hover:text-white transition-colors">
                 Privacy
               </Link>

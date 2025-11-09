@@ -9,24 +9,24 @@ import appstore from "@/assets/appstore.svg?url";
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col overflow-visible bg-white pb-0 pt-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-8 relative z-40">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-8 relative z-40">
         {/* Header Text */}
-        <div className="max-w-5xl mx-auto text-center space-y-6 mb-16">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 leading-tight">
+        <div className="max-w-5xl mx-auto text-center space-y-4 sm:space-y-6 mb-8 sm:mb-12 lg:mb-16">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 leading-tight px-2">
             The #1 rideshare app for{" "}
-            <span className="block mt-2">long distance travel</span>
+            <span className="block mt-1 sm:mt-2">long distance travel</span>
           </h1>
           
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Save money on petrol and enjoy cheap rides you can actually trust—connect with real, verified travelers for affordable long-distance trips across South Africa.
           </p>
           
           {/* App Store Badge */}
-          <div className="flex justify-center -mt-4">
+          <div className="flex justify-center -mt-2 sm:-mt-4">
             <img 
               src={appstore} 
               alt="Download on the App Store" 
-              className="h-10 sm:h-11 lg:h-12 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+              className="h-9 sm:h-10 md:h-11 lg:h-12 w-auto cursor-pointer hover:opacity-80 transition-opacity"
             />
           </div>
         </div>
@@ -34,8 +34,8 @@ export const Hero = () => {
       </div>
 
       {/* Phone Mockup Container with Floating Cards */}
-      <div className="relative w-full flex justify-center -mt-20 sm:-mt-32 lg:-mt-48 z-20">
-        <div className="relative w-full max-w-7xl h-[700px] sm:h-[800px] lg:h-[900px]">
+      <div className="relative w-full flex justify-center -mt-8 sm:-mt-20 md:-mt-32 lg:-mt-48 z-20">
+        <div className="relative w-full max-w-7xl h-[500px] sm:h-[700px] md:h-[800px] lg:h-[900px]">
           
           {/* Floating Notification Cards */}
           {/* Top Left Card - Moved further down relative to hand mockup */}
@@ -82,10 +82,10 @@ export const Hero = () => {
           {/* Middle Right Card - Moved slightly up */}
           <Card className="absolute top-[25rem] right-16 sm:right-16 lg:right-48 w-64 p-4 shadow-xl border-2 bg-green-50 border-green-200 animate-float hidden md:block z-10">
             <div className="flex items-start gap-3">
-              <Check className="h-5 w-5 text-white-600 flex-shrink-0 mt-1" />
+              <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-1" />
               <div>
-                <div className="font-semibold text-sm text-white-900 mb-1">Trip completed</div>
-                <div className="text-xs text-white-700">Durban → Pretoria • On time arrival</div>
+                <div className="font-semibold text-sm text-green-900 mb-1">Trip completed</div>
+                <div className="text-xs text-green-700">Durban → Pretoria • On time arrival</div>
               </div>
             </div>
           </Card>
@@ -106,7 +106,7 @@ export const Hero = () => {
           </Card>
 
           {/* Hand Mockup - Positioned higher up, in front */}
-          <div className="absolute -top-10 sm:-top-16 lg:-top-24 left-1/2 -translate-x-1/2 w-[450px] sm:w-[550px] lg:w-[700px] xl:w-[800px] z-30">
+          <div className="absolute -top-4 sm:-top-10 md:-top-16 lg:-top-24 left-1/2 -translate-x-1/2 w-[280px] sm:w-[450px] md:w-[550px] lg:w-[700px] xl:w-[800px] z-30">
             <img 
               src={handMockup}
               alt="Hand holding phone showing Woza app" 
