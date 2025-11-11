@@ -23,11 +23,17 @@ export const Hero = () => {
           
           {/* App Store Badge */}
           <div className="flex justify-center -mt-2 sm:-mt-4">
-            <img 
-              src={appstore} 
-              alt="Download on the App Store" 
-              className="h-9 sm:h-10 md:h-11 lg:h-12 w-auto cursor-pointer hover:opacity-80 transition-opacity"
-            />
+            <a 
+              href="https://apps.apple.com/za/app/woza-rides/id6745831021"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img 
+                src={appstore} 
+                alt="Download on the App Store" 
+                className="h-9 sm:h-10 md:h-11 lg:h-12 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+              />
+            </a>
           </div>
         </div>
 

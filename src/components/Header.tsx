@@ -78,6 +78,7 @@ export const Header = () => {
             <Button 
               variant="outline" 
               className="hidden md:flex border-gray-300 hover:bg-gray-50 text-sm font-medium"
+              onClick={() => window.open('https://apps.apple.com/za/app/woza-rides/id6745831021', '_blank')}
             >
               Get the app 📱
             </Button>
@@ -137,6 +138,7 @@ export const Header = () => {
               <Button 
                 variant="outline" 
                 className="mt-2 border-gray-300 hover:bg-gray-50 text-base font-medium w-full py-6"
+                onClick={() => window.open('https://apps.apple.com/za/app/woza-rides/id6745831021', '_blank')}
               >
                 Get the app 📱
               </Button>
