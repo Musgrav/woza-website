@@ -13,7 +13,7 @@ export const Hero = () => {
         {/* Header Text */}
         <div className="max-w-5xl mx-auto text-center space-y-4 sm:space-y-6 mb-8 sm:mb-12 lg:mb-16">
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 leading-tight px-2">
-            The #1 rideshare app for{" "}
+            Africa's #1 rideshare app for{" "}
             <span className="block mt-1 sm:mt-2">long distance travel</span>
           </h1>
           
